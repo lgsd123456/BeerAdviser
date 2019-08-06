@@ -9,8 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.hfad.bitsandpizzas.PizzaDetailActivity"
-                  android:parentActivityName="com.hfad.bitsandpizzas.MainActivity">
+        <activity android:name="com.hfad.catchat.FeedbackActivity">
+        </activity>
+        <activity android:name="com.hfad.catchat.HelpActivity">
+        </activity>
+        <activity android:name="com.hfad.catchat.Main3Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hfad.bitsandpizzas.PizzaDetailActivity"
+            android:parentActivityName="com.hfad.bitsandpizzas.MainActivity">
         </activity>
         <activity android:name="com.hfad.workout.TempActivity">
         </activity>
@@ -24,11 +36,6 @@
             android:parentActivityName="com.hfad.bitsandpizzas.MainActivity">
         </activity>
         <activity android:name="com.hfad.bitsandpizzas.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".DrinkActivity">
         </activity>
